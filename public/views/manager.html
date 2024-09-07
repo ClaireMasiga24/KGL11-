@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Agent Dashboard</title>
-    <link rel="stylesheet" href="/public/css/salesAgents.css">
-    <script src="salesAgents.js" defer></script>
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="/public/css/manager.css">
+    <script src="manager.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <h1>Sales Agent Dashboard</h1>
+        <h1>Manager Dashboard</h1>
         <button id="logout-button">Logout</button>
     </header>
     <div class="content">
-        <h2>Welcome, Sales Agent</h2>
+        <h2>Welcome, Manager</h2>
         <div class="stats">
+            <div class="stat-item">
+                <h2>Total Stock</h2>
+                <p id="total-stock">Loading...</p>
+            </div>
+            <div class="stat-item">
+                <h2>Total Sales</h2>
+                <p id="total-sales">Loading...</p>
+            </div>
             <div class="stat-item">
                 <h2>Today's Sales</h2>
                 <p id="todays-sales">Loading...</p>
@@ -27,6 +35,6 @@
         <a href="stock.html" class="btn">Manage Stock</a>
         <a href="sales.html" class="btn">Manage Sales</a>
     </div>
-    <script src="/public/scripts/salesAgents.js"></script>
+    <script src="/public/scripts/manager.js"></script>
 </body>
 </html>
